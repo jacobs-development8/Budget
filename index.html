@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    <h1>Budget App</h1>
+
+    <main>
+        <div class="forms-container">
+        
+            <form id="budget">
+                <label for="budgetAmount">Please Enter Your Budget</label>
+                <input id="budgetAmount" name="budgetAmount" type="number" min="0" step="5">
+    
+                <input type="submit" value="Calculate">
+            </form>
+    
+            <form id="expense">
+                <div class="errors">
+                 
+                </div>
+
+                <label for="expenseName">Enter Your Expense</label>
+                <input id="expenseName" name="expenseName" type="text">
+    
+                <label for="expenseAmount">Enter Your Expense Amount</label>
+                <input id="expenseAmount" name="expenseAmount" type="number" min="0" step="5">
+    
+                <input type="submit" value="Add Expense">
+            </form>
+        </div>
+    
+        <div class="budget-container">
+            <div class="totals">
+                <div class="total-wrapper">
+                    <h2>Budget</h2>
+                    <img src="img/bill.svg">
+                    <p id="budgetValue" class="green">$0</p>
+                </div>
+    
+                <div class="total-wrapper">
+                    <h2>Expenses</h2>
+                    <img src="img/card.svg">
+                    <p id="expenseValue" class="red">$0</p>
+                </div>
+    
+                <div class="total-wrapper">
+                    <h2>Balance</h2>
+                    <img src="img/dollar.svg">
+                    <p id="balanceValuee">$0</p>
+                </div>
+            </div>
+    
+            <table>
+                <tr>
+                  <th>Expense Title</th>
+                  <th>Expense Value</th>
+                  <th></th>
+                </tr>
+              </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
